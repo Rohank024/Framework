@@ -50,7 +50,8 @@ public class OrangeHRMLogin {
 		  boolean status = timetrack.isDisplayed();
 	      Assert.assertEquals(status, true);
 	      Thread.sleep(2000);
-	      
+	  
+	  // create user    
 	      String Homepage = driver.getTitle();
 	      softassert.assertEquals(Homepage, "actiTIME-Enter Time-Track");
 	      Reporter.log("create user", true);
@@ -59,3 +60,4 @@ public class OrangeHRMLogin {
 	  
   }
 }
+
